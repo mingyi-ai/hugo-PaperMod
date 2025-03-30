@@ -20,6 +20,9 @@
     {{- partialCached "header.html" . .Page -}}
     <main class="main">
         {{- block "main" . }}{{ end }}
+        <link rel="stylesheet" href="{{ "css/dots-field.css" | relURL }}">
+        <script src="{{ "js/dots-field.js" | relURL }}" defer></script>
+        <svg id="dots-field"></svg>
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
 </body>

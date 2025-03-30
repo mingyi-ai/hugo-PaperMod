@@ -3,6 +3,17 @@
     margin: 24px auto var(--content-gap) auto;
 }
 
+/* Add a non-transparent background */
+.post-single {
+    position: relative;
+    margin-bottom: var(--gap);
+    padding: var(--gap);
+    background: var(--entry);
+    border-radius: var(--radius);
+    transition: transform 0.1s;
+    border: 2px solid var(--border);
+}
+
 .post-title {
     margin-bottom: 2px;
     font-size: 40px;
